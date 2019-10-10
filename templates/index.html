@@ -8,4 +8,23 @@
 
     <img src="{{ url_for('static', filename='images/Flask.png') }}" />
 
+  <form  method="post">
+    <table>
+      <tr>
+        <td> Loan amount: </td> <td> <input type="text" name="A" /> </td>
+      </tr>
+      <tr>
+        <td> Number of periodic payments: </td> <td> <input type="text" name="n" /> </td>
+      </tr>
+      <tr>
+        <td> Periodic interest rate: </td> <td> <input type="text" name="i" /> </td>
+      </tr>
+    </table>
+      <br>
+
+    <input class="button" type="submit" formaction="/payment" value="Payment" />
+  </form>
+
+<p> {{ display }} </p>
+<div style="clear:both;"></div>
 {% endblock %}
