@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>Flask Server</title>
-      <link rel="stylesheet" type="text/css" href="../static/css/stylesheet.css">
 
-</head>
+{% extends 'base.html' %}
 
-  <body>
+{% block body %}
 
-    <h2> This is my Falsk server! </h2>
+    <h2> This is your loan calculator page! </h2>
 
-    <img src="../static/images/Flask.png" />
+    <img src="{{ url_for('static', filename='images/Flask.png') }}" />
 
-  </body>
-
-</html>
+{% endblock %}
